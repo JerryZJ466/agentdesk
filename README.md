@@ -46,7 +46,7 @@ _local/               本机校验记录，Git 已忽略
 
 ## 仓库与迭代
 
-远程仓库：[GitHub 上的 agentdesk](https://github.com/JerryZJ466/agentdesk)。默认分支为 `main`，当前设为私有。此项目不依赖 MeetLoop 的代码、文件或服务。
+远程仓库：[GitHub 上的 agentdesk](https://github.com/JerryZJ466/agentdesk)。默认分支为 `main`，当前设为公开。此项目不依赖 MeetLoop 的代码、文件或服务。
 
 每次完成一个可解释、可验证的小任务后提交：
 
