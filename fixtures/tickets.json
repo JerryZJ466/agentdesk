@@ -1,0 +1,30 @@
+{
+  "fixture_only": true,
+  "tickets": [
+    {
+      "ticket_id": "T-1001",
+      "tenant_id": "north",
+      "subject": "导出任务失败",
+      "body": "请调查 J-1001 为什么失败，并给出有证据的处理建议。未获明确审批前不要重试。",
+      "job_id": "J-1001",
+      "version": 1
+    },
+    {
+      "ticket_id": "T-1002",
+      "tenant_id": "north",
+      "subject": "导出权限不足",
+      "body": "用户无法导出数据，请检查原因。",
+      "job_id": "J-1002",
+      "version": 1
+    },
+    {
+      "ticket_id": "T-2001",
+      "tenant_id": "south",
+      "subject": "CSV 字段缺失",
+      "body": "上传样本缺少必填列，请分析 sample_south.csv。",
+      "job_id": "J-2001",
+      "artifact_id": "A-SOUTH-CSV",
+      "version": 1
+    }
+  ]
+}

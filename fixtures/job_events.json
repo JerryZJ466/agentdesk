@@ -1,0 +1,41 @@
+{
+  "fixture_only": true,
+  "events": [
+    {
+      "event_id": "EV-1001-1",
+      "tenant_id": "north",
+      "job_id": "J-1001",
+      "at": "2026-10-01T09:00:00Z",
+      "type": "started"
+    },
+    {
+      "event_id": "EV-1001-2",
+      "tenant_id": "north",
+      "job_id": "J-1001",
+      "at": "2026-10-01T09:00:10Z",
+      "type": "failed",
+      "code": "dependency_timeout",
+      "retry_count": 0
+    },
+    {
+      "event_id": "EV-1002-1",
+      "tenant_id": "north",
+      "job_id": "J-1002",
+      "at": "2026-10-01T10:00:00Z",
+      "type": "failed",
+      "code": "permission_denied",
+      "retry_count": 0
+    },
+    {
+      "event_id": "EV-2001-1",
+      "tenant_id": "south",
+      "job_id": "J-2001",
+      "at": "2026-10-01T11:00:00Z",
+      "type": "failed",
+      "code": "missing_column",
+      "missing_columns": [
+        "currency"
+      ]
+    }
+  ]
+}

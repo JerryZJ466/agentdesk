@@ -1,0 +1,99 @@
+{
+  "status": "DESIGN_EXAMPLE_NOT_ENFORCED",
+  "version": "0.1",
+  "default_decision": "deny",
+  "identity_source": "server_authenticated_context",
+  "rules": [
+    {
+      "tools": [
+        "get_ticket",
+        "search_docs",
+        "query_job_events"
+      ],
+      "roles": [
+        "viewer",
+        "operator"
+      ],
+      "checks": [
+        "resource.tenant_id == actor.tenant_id",
+        "resource_acl_allows_actor"
+      ]
+    },
+    {
+      "tools": [
+        "draft_reply"
+      ],
+      "roles": [
+        "operator"
+      ],
+      "checks": [
+        "same_tenant",
+        "ticket_scope",
+        "resource_version_matches"
+      ]
+    },
+    {
+      "tools": [
+        "analyze_csv"
+      ],
+      "roles": [
+        "viewer",
+        "operator"
+      ],
+      "checks": [
+        "same_tenant",
+        "sandbox_required",
+        "read_only_input",
+        "deny_network",
+        "bounded_output"
+      ]
+    },
+    {
+      "tools": [
+        "retry_export"
+      ],
+      "roles": [
+        "operator"
+      ],
+      "checks": [
+        "same_tenant",
+        "job_is_retryable",
+        "retry_count_below_limit",
+        "valid_action_bound_approval",
+        "execution_time_recheck",
+        "idempotency_key_required"
+      ]
+    }
+  ],
+  "approval_binding": [
+    "user_id",
+    "tenant_id",
+    "run_id",
+    "tool_call_id",
+    "tool_name",
+    "args_hash",
+    "resource_version",
+    "policy_version",
+    "expires_at",
+    "approver_id"
+  ],
+  "budgets_example": {
+    "max_turns": 8,
+    "run_deadline_seconds": 120,
+    "tool_deadline_seconds": 20,
+    "max_tool_output_bytes": 32768
+  },
+  "budget_note": "这些是起始实验参数，非已验证的生产设置；真实付费预算需显式配置。",
+  "audit_fields": [
+    "run_id",
+    "event_seq",
+    "actor_id",
+    "tenant_id",
+    "tool_call_id",
+    "decision",
+    "reason",
+    "args_hash",
+    "operation_id",
+    "timestamp"
+  ]
+}

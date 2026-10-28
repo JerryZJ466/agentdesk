@@ -1,0 +1,13 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AgentDesk 准备材料说明</title><style>body{font-family:"Microsoft YaHei",system-ui,sans-serif;background:#f2f5f7;color:#24374a;line-height:1.85;margin:0}main{max-width:980px;margin:32px auto;padding:32px 44px;background:white;border-radius:12px}h1,h2{color:#16324d}a,h3{color:#087e8b}a{overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;margin:18px 0}th,td{border:1px solid #d7e3ea;padding:12px;text-align:left;vertical-align:top}th{background:#16324d;color:white}.box{background:#eff6f8;border-left:4px solid #087e8b;padding:16px}.muted{color:#63758a}li{margin:7px 0}code{background:#eff6f8;padding:2px 4px}pre{white-space:pre-wrap;background:#eff6f8;padding:20px}input{margin-right:8px}</style><main><h1>AgentDesk 准备材料说明</h1>
+<p class="box">这些是学习用的虚构数据和设计规格。当前没有 Agent 运行时、权限引擎、沙箱或自动评分器；JSON 里的规则不会自己执行。先完成第一周查询练习，再逐步把规格实现为代码与测试。</p>
+<table><tr><th>文件</th><th>用途</th></tr>
+<tr><td><a href="tickets.json">tickets.json</a></td><td>两个租户、三条工单，练 Python JSON 读取、筛选和授权。</td></tr>
+<tr><td><a href="documents.json">documents.json</a></td><td>四篇资料，包含一篇故意含伪造指令的安全测试材料；只当数据读取。</td></tr>
+<tr><td><a href="job_events.json">job_events.json</a></td><td>四条模拟任务事件；给调查结论提供可验证证据。</td></tr>
+<tr><td><a href="sample_south.csv">sample_south.csv</a></td><td>故意缺少 currency 列的样本，用于后续隔离文件分析。</td></tr>
+<tr><td><a href="actors.example.json">actors.example.json</a></td><td>测试身份。正式实现必须从服务器认证上下文获取身份。</td></tr>
+<tr><td><a href="policy.example.json">policy.example.json</a></td><td>权限、审批绑定、预算与审计字段示例，不是已生效的安全配置。</td></tr>
+<tr><td><a href="eval_cases.seed.jsonl">eval_cases.seed.jsonl</a></td><td>12 个开发集规格样例，包含正常、越权、注入、超时、回执丢失与恢复。</td></tr></table>
+<h2>第一次练习</h2><ol><li>用 Python 读取 tickets.json，解释列表与字典。</li><li>编写 get_ticket(actor, ticket_id)，身份由测试上下文传入。</li><li>u-n-viewer 可以查询 T-1001，不能读取 T-2001。</li><li>用断言验证正常、缺失与无权。返回内容不要泄漏其他租户的字段。</li><li>关闭 AI 对话，把规则改为增加一个资源可见性条件，再独立验证。</li></ol>
+<h2>如何扩展为评测</h2><p>先将 acceptance_checks 转成确定性断言。fault_injection 是将来模拟器应支持的条件名称，目前尚未实现。每个 trial 重置数据，记录工具轨迹与最终业务状态。12 个样例都是开发集，不是留出集，也不构成生产安全证明。</p>
+<p><a href="../docs/plans/plan.html">返回完整计划</a></p></main></html>

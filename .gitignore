@@ -1,0 +1,36 @@
+# Local-only records and personal historical material
+_local/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+tmp/
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+# Keep dependency lock files in version control when introduced.
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+# Frontend
+node_modules/
+coverage/
+# Runtime data and generated artifacts; synthetic fixtures remain tracked.
+data/runtime/
+runs/
+artifacts/
+*.sqlite
+*.sqlite3

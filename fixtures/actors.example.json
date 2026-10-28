@@ -1,0 +1,21 @@
+{
+  "design_only": true,
+  "warning": "actor 身份由服务端认证上下文产生，不能相信客户端或模型提交的 tenant_id / role。",
+  "actors": [
+    {
+      "user_id": "u-n-viewer",
+      "tenant_id": "north",
+      "role": "viewer"
+    },
+    {
+      "user_id": "u-n-operator",
+      "tenant_id": "north",
+      "role": "operator"
+    },
+    {
+      "user_id": "u-s-viewer",
+      "tenant_id": "south",
+      "role": "viewer"
+    }
+  ]
+}
