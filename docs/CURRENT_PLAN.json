@@ -1,0 +1,9 @@
+{
+  "version": "2.0",
+  "date": "2026-10-29",
+  "source": "plans/plan.source.json",
+  "markdown": "plans/plan.md",
+  "html": "plans/plan.html",
+  "pdf": "plans/AgentDesk_开发与学习主计划_v2.0_2026-10-29.pdf",
+  "application_implemented": false
+}
