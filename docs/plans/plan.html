@@ -1,4 +1,4 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AgentDesk 开发与学习主计划</title><style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;background:#f2f5f7;color:#24374a;line-height:1.85;margin:0}main{max-width:1000px;margin:28px auto;padding:30px 42px;background:white}h1,h2{color:#16324d}h3,a{color:#087e8b}table{border-collapse:collapse;width:100%;margin:18px 0}th,td{border:1px solid #d7e3ea;padding:10px;text-align:left;vertical-align:top}th{background:#16324d;color:white}.box{background:#eff6f8;border-left:4px solid #087e8b;padding:16px}.page{border-top:1px solid #d7e3ea;margin-top:30px;padding-top:14px}.sub{color:#63758a}a{overflow-wrap:anywhere}@media(max-width:700px){main{padding:16px}table{font-size:13px}}</style><main><h1>AgentDesk 开发与学习主计划</h1><p class="sub">v2.0 · 2026-10-29 · 计划，不代表已实现。</p><ol>
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AgentDesk 开发与学习主计划</title><style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;background:#f2f5f7;color:#24374a;line-height:1.85;margin:0}main{max-width:1000px;margin:28px auto;padding:30px 42px;background:white}h1,h2{color:#16324d}h3,a{color:#087e8b}table{border-collapse:collapse;width:100%;margin:18px 0}th,td{border:1px solid #d7e3ea;padding:10px;text-align:left;vertical-align:top}th{background:#16324d;color:white}.box{background:#eff6f8;border-left:4px solid #087e8b;padding:16px}.page{border-top:1px solid #d7e3ea;margin-top:30px;padding-top:14px}.sub{color:#63758a}a{overflow-wrap:anywhere}@media(max-width:700px){main{padding:16px}table{font-size:13px}}</style><main><h1>AgentDesk 开发与学习主计划</h1><p class="sub">v2.1 · 2026-10-29 · 计划，不代表已实现。</p><ol>
 <li><a href="#p1">AgentDesk 开发与学习主计划</a></li>
 <li><a href="#p2">阶段总表与面试出口</a></li>
 <li><a href="#p3">A0-A1：后端基础与确定性工作流</a></li>
@@ -9,23 +9,25 @@
 <li><a href="#p8">A6-1：沙箱和执行边界</a></li>
 <li><a href="#p9">A6-2：持久化、恢复与不确定结果</a></li>
 <li><a href="#p10">A7-1：评测与优化的方法</a></li>
-<li><a href="#p11">A7-2：上线、运维与 FDE 交付</a></li>
+<li><a href="#p11">A7-2：AI 应用交付与选修边界</a></li>
 <li><a href="#p12">工具契约、信任边界与准备材料</a></li>
 <li><a href="#p13">开源阅读与课程顺序</a></li>
 <li><a href="#p14">岗位覆盖与模型服务分支</a></li>
-<li><a href="#p15">双线时间安排与求职节奏</a></li>
+<li><a href="#p15">核心路线的实习时间安排</a></li>
 <li><a href="#p16">两个项目之外必须持续训练</a></li>
 <li><a href="#p17">从今天开始与最终验收</a></li>
+<li><a href="#p18">实习目标：国内八家公司</a></li>
+<li><a href="#p19">实习目标：美国移动与 AI 应用</a></li>
 </ol>
-<section class="page" id="p1"><h2>01 AgentDesk 开发与学习主计划</h2><p class="sub">v2.0 | 2026-10-29 审核版 | 独立 AI 应用 / Agent 工程项目</p>
+<section class="page" id="p1"><h2>01 AgentDesk 开发与学习主计划</h2><p class="sub">v2.1 | 2026-10-29 主次修订 | Agent / AI 应用核心；FDE / 平台附加</p>
 <p class="box">主路线：后端与确定性基线 → 单 Agent 与早期 harness → 检索与 Web → 审批、沙箱、恢复 → 评测和交付。</p>
 <p>构建一个虚构 SaaS 支持工单调查助手：查工单、可见文档和日志，给出带证据的诊断；需要重试导出时先提出具体操作，审批后执行并核实回执。它与 MeetLoop 的业务、仓库、数据库和部署完全独立。</p>
 <table><tr><th>已有准备</th><th>不能视为完成</th></tr><tr><td>公开仓库、课程与源码地图、虚构数据、12 个开发集规格、策略设计示例。</td><td>Agent 运行时、权限执行、沙箱、自动评分器、真实模型评测和部署均未实现。</td></tr><tr><td>本版统一阶段、工时、验收与岗位差距；补 Web 基础、数据生命周期和 FDE 交付。</td><td>你的 Python / SQL 独立能力、环境和实际可用 API 仍需 A0-A2 验证。</td></tr></table>
-<p>主目标是 AI 应用 / Agent 工程；A7 增加 FDE 交付训练。模型服务平台为独立进阶分支，训练算法、CUDA 内核和分布式训练不在本项目主线。</p>
-<p>唯一执行口径：plan.source.json 生成 plan.md / plan.html / 本 PDF。START_HERE 与 PROGRESS 使用同一阶段 ID；旧 v1.0 的 44 周与 400h 排期归档，不再驱动任务。</p>
+<p>核心是 Agent 工程与 AI 应用：后端、LLM、工具、数据、权限、沙箱、恢复和评测。基本产品交付保留；FDE专项与模型服务平台为附加，不作为应用实习前置。</p>
+<p>plan.source.json生成同版Markdown/HTML/PDF。旧v2.0及v1.0仅作历史；本版将FDE专项和模型平台明确设为选修，执行顺序与工时以本版为准。</p>
 </section>
-<section class="page" id="p2"><h2>02 阶段总表与面试出口</h2><p class="sub">新版显式计入 Web、数据维护与交付；主线 450-650h</p>
-<table><tr><th>阶段</th><th>本阶段</th><th>累计</th><th>完成后能做什么</th></tr><tr><td>A0 环境与 Python 起点</td><td>10-15h</td><td>10-15h</td><td>读取虚构工单，独立写带范围的查询与断言。</td></tr><tr><td>A1 后端与确定性基线</td><td>50-70h</td><td>60-85h</td><td>Python / HTTP / SQL 基础、受限只读 API 和可重复基线。</td></tr><tr><td>A2 LLM 与 Agent 循环</td><td>45-65h</td><td>105-150h</td><td>自己写一次小循环，接一种 SDK，具备早期 harness。</td></tr><tr><td>A3 检索与数据生命周期</td><td>40-60h</td><td>145-210h</td><td>可见资料检索、引用、索引更新与删除均有验证。</td></tr><tr><td>A4 React Web 控制台</td><td>60-85h</td><td>205-295h</td><td>掌握 DOM / CSS / React、API 联调、鉴权与事件流。</td></tr><tr><td>A5 权限与受控写入</td><td>55-80h</td><td>260-375h</td><td>操作绑定审批、执行时复查、幂等与回执。</td></tr><tr><td>A6 沙箱与持久化恢复</td><td>80-115h</td><td>340-490h</td><td>隔离执行、worker 重启、未知结果对账与取消传播。</td></tr><tr><td>A7 系统评测与交付</td><td>110-160h</td><td>450-650h</td><td>冻结评测、测量优化、部署恢复、两轮试用与 FDE 演练。</td></tr></table>
+<section class="page" id="p2"><h2>02 阶段总表与面试出口</h2><p class="sub">Agent / AI应用核心425-610h；实习检查点早于完整深化</p>
+<table><tr><th>必修阶段</th><th>本阶段</th><th>累计</th><th>完成后能做什么</th></tr><tr><td>A0 环境与 Python 起点</td><td>10-15h</td><td>10-15h</td><td>读取虚构工单，独立写带范围的查询与断言。</td></tr><tr><td>A1 后端与确定性基线</td><td>50-70h</td><td>60-85h</td><td>Python / HTTP / SQL 基础、受限只读 API 和可重复基线。</td></tr><tr><td>A2 LLM 与 Agent 循环</td><td>45-65h</td><td>105-150h</td><td>自己写一次小循环，接一种 SDK，具备早期 harness。</td></tr><tr><td>A3 检索与数据生命周期</td><td>40-60h</td><td>145-210h</td><td>可见资料检索、引用、索引更新与删除均有验证。</td></tr><tr><td>A4 React Web 控制台</td><td>60-85h</td><td>205-295h</td><td>掌握 DOM / CSS / React、API 联调、鉴权与事件流。</td></tr><tr><td>A5 权限与受控写入</td><td>55-80h</td><td>260-375h</td><td>操作绑定审批、执行时复查、幂等与回执。</td></tr><tr><td>A6 沙箱与持久化恢复</td><td>80-115h</td><td>340-490h</td><td>隔离执行、worker 重启、未知结果对账与取消传播。</td></tr><tr><td>A7 系统评测与应用交付</td><td>85-120h</td><td>425-610h</td><td>评测、可靠性、可复现部署、试用和基本技术演示。</td></tr></table>
 <p>A0-A4 累计 205-295h，是只读 AI 应用作品的首次投递检查点；A0-A5 累计 260-375h，增加受控操作。两处都必须能独立演示小闭环、解释权限与失败处理并提供真实评测证据，才考虑投递对应实习；没有通过关卡就延长。</p>
 <p class="box">A0 → A1 → A2 → A3 → A4 → A5 → A6 → A7。评测、权限、日志和预算从前期就有最小版本；后续阶段加深。工时包括学习、实现、测试与正常返工，不是招聘行业统计。</p>
 </section>
@@ -78,16 +80,16 @@
 <p class="box">关卡：E05 / E06 / E11 / E12 的规格成为真实测试；展示 worker 重启与最终数据库状态一致。自己的状态机足够时，不追加工作流平台。</p>
 <p><a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a> · <a href="https://github.com/google/adk-python">Google ADK Python</a> · <a href="https://www.anthropic.com/research/effective-harnesses-for-long-running-agents">Anthropic 长任务 harness 设计</a></p>
 </section>
-<section class="page" id="p10"><h2>10 A7-1：评测与优化的方法</h2><p class="sub">A7 共 110-160h，含下一页交付；评测从 A1 起持续积累</p>
+<section class="page" id="p10"><h2>10 A7-1：评测与优化的方法</h2><p class="sub">A7核心85-120h，含下一页应用交付；评测从A1起持续积累</p>
 <table><tr><th>层次</th><th>何时 / 如何验证</th></tr><tr><td>确定性测试</td><td>A1 起验证业务规则、SQL、权限、参数与预算；Mock 注入 429、超时、坏 JSON、重复投递。通过不等于模型有效。</td></tr><tr><td>开发集</td><td>A2 起使用现有 12 个规格及新增任务；每次重置业务状态，记录输入 / 预期 / 工具轨迹 / 实际副作用。</td></tr><tr><td>留出评测</td><td>A7 前冻结不同任务家族与表达的留出集，版本记录；公开后不能再声称秘密，调参用过的样本归入开发集。</td></tr><tr><td>指标</td><td>任务达成、引用支持、约束违规、恢复正确率、人工介入率、费用、总耗时与 p50 / p95；小样本报告分母与重复次数。</td></tr><tr><td>优化对照</td><td>固定模型 / 数据 / 环境，比较规则基线、检索方案、上下文、工具 schema 与缓存；一次改一个因素。</td></tr></table>
 <p>项目实验可先扩展到 30-50 个开发任务、20-30 个留出任务，按成本选择每题重复 3-5 次；这些是起始设计，不是行业合格线。先做确定性评分，模型裁判仅辅助，抽样人工校准。安全关键用例要求本轮全部通过，但不等于生产安全保证。</p>
 <p>质量、时延和成本一起报告；不要求模型每次选完全相同的工具轨迹。不能只让模型给自己的回答打分，也不能把几个成功截图当成功率。</p>
 <p><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Anthropic Agent 评测方法</a> · <a href="https://developers.openai.com/api/docs/guides/evaluation-best-practices">OpenAI 评测方法</a> · <a href="https://developers.openai.com/api/docs/deprecations">OpenAI API 弃用公告</a></p>
 </section>
-<section class="page" id="p11"><h2>11 A7-2：上线、运维与 FDE 交付</h2><p class="sub">从本地可复现到受控试用；模拟项目如实标注</p>
-<table><tr><th>交付</th><th>明确产出</th></tr><tr><td>部署与 CI</td><td>锁依赖；离线测试进 CI；配置 / secrets 分离；容器化服务与数据库迁移；健康检查、版本回滚与备份恢复。</td></tr><tr><td>可观测性</td><td>run / tool / request ID、错误分类、耗时、用量与队列指标；日志与 trace 脱敏、保留期限和删除路径。</td></tr><tr><td>FDE 需求发现</td><td>访谈 2-3 位愿意试用的人；写现有流程、用户角色、输入输出、成功标准、系统限制与不做范围。</td></tr><tr><td>连接器交付</td><td>对一个模拟业务 API 完成 schema 映射、分页、认证、限流 / 重试 / webhook 重放或变更；选实际需要的机制。</td></tr><tr><td>验收与交接</td><td>两轮任务试用；收集失败与人工接管原因；写部署 / 故障手册、验收清单、需求变更记录和 5 分钟英文演示。</td></tr></table>
-<p>第一份需求和成功标准在 A1 就写；最早可运行版本就试用。A7 负责把这些证据闭环，不等开发半年后才问有没有人需要。可用模拟客户角色练习，但不得把它写成真实企业部署。</p>
-<p class="box">FDE 的优势来自把含糊需求变成可验收系统，并能与用户一起处理失败。英语与外向有帮助，技术深度、集成能力、排错和交付责任仍是必要条件。</p>
+<section class="page" id="p11"><h2>11 A7-2：AI 应用交付与选修边界</h2><p class="sub">基本交付保留；FDE 深化不作为实习门槛</p>
+<table><tr><th>核心任务</th><th>明确产出</th></tr><tr><td>部署与 CI</td><td>锁依赖、离线回归、配置与secrets分离；容器化、迁移、健康检查、回滚与备份恢复。</td></tr><tr><td>可观测性</td><td>run / tool / request关联、错误分类、时延与费用；日志和trace脱敏、保留期限与删除。</td></tr><tr><td>应用需求与试用</td><td>一页用户/任务/成功标准，完成两轮小规模试用；记录失败、人工接管、一次需求变化和修复。</td></tr><tr><td>基本技术交付</td><td>清晰运行说明、故障手册与3-5分钟演示；能独立增加工具或规则。模拟业务如实标注。</td></tr></table>
+<p>需求说明从A1开始、最早版本即可试用。弱化FDE专项不会删除产品意识和系统集成：数据契约、认证、分页、限流与重试仍按实际API需要练。</p>
+<p class="box">F1选修25-40h：更完整的客户访谈、商业流程映射、复杂集成/验收、英文交接与角色扮演。模型平台另100-160h。当前不以FDE或平台岗位的全部标准卡住Agent实习。</p>
 </section>
 <section class="page" id="p12"><h2>12 工具契约、信任边界与准备材料</h2><p class="sub">所有 fixtures 均为虚构；样例内容只能作为数据读取</p>
 <table><tr><th>工具 / 材料</th><th>实现阶段与边界</th></tr><tr><td>get_ticket / query_job_events</td><td>A1：只读；以可信 actor 做租户与资源授权；超时不得解释为没有日志。</td></tr><tr><td>search_docs</td><td>A3：可见范围检索、版本与引用；删除 / 撤权传播到索引和缓存。</td></tr><tr><td>draft_reply / retry_export</td><td>A5：草稿与操作提案区分；执行由策略、绑定审批、幂等键与回执控制。</td></tr><tr><td>analyze_csv</td><td>A6：固定分析起步，任意代码需先通过隔离关卡；read-only 输入和产物范围。</td></tr><tr><td>policy / actors examples</td><td>设计规格与测试身份；不能从模型或浏览器提供的角色直接授权。</td></tr><tr><td>12 个 eval specs</td><td>逐步实现：E01-03/07/08 为早期基础；E04/11 审批及 E05/06 最小幂等 / 回执丢失在 A5；E12 重启、E09/10 沙箱在 A6。当前全部仅规格。</td></tr></table>
@@ -95,23 +97,22 @@
 <p>目录按需创建 apps/api、apps/console、agent、worker、evals；只在有可运行代码时加入。现在不创建空壳微服务、通用插件平台或 Agent 市场。</p>
 </section>
 <section class="page" id="p13"><h2>13 开源阅读与课程顺序</h2><p class="sub">一次追一个问题，不把七套框架装进同一工程</p>
-<table><tr><th>阶段</th><th>资料 / 参考</th><th>读完交付什么</th></tr><tr><td>A0-A1</td><td>Python / FastAPI / pytest / PostgreSQL。</td><td>可测试 API 与确定性基线。</td></tr><tr><td>A2</td><td>HF Agents 基础 + OpenAI Agents SDK。</td><td>教学循环与 SDK 对照；记录调用路径、commit、测试和改动实验。</td></tr><tr><td>A3</td><td>WeKnora + DeerFlow + harness 文章。</td><td>检索 ACL / 更新验证；大输出落盘与上下文压缩实验。</td></tr><tr><td>A4</td><td>MDN + React / TS；Full Stack Open 选 Web 部分。</td><td>控制台全链路；不为了课程追加 Node、MongoDB、GraphQL 三套服务。</td></tr><tr><td>A5-A6</td><td>AgentScope / ADK / Microsoft Agent Framework；MCP 安全；Docker / OpenSandbox。</td><td>分别学习审批、事件、恢复和隔离机制，只选与当关有关的一个。</td></tr><tr><td>A7</td><td>Agent 评测方法与自己的失败记录。</td><td>可复现实验、部署与需求验收。</td></tr></table>
+<table><tr><th>阶段</th><th>资料 / 参考</th><th>读完交付什么</th></tr><tr><td>A0-A1</td><td>Python / FastAPI / pytest / PostgreSQL。</td><td>可测试 API 与确定性基线。</td></tr><tr><td>A2</td><td>HF Agents 基础 + OpenAI Agents SDK。</td><td>教学循环与 SDK 对照；记录调用路径、commit、测试和改动实验。</td></tr><tr><td>A3</td><td>WeKnora + DeerFlow + harness 文章。</td><td>检索 ACL / 更新验证；大输出落盘与上下文压缩实验。</td></tr><tr><td>A4</td><td>MDN + React / TS；Full Stack Open 选 Web 部分。</td><td>控制台全链路；不为了课程追加 Node、MongoDB、GraphQL 三套服务。</td></tr><tr><td>A5-A6</td><td>AgentScope / ADK / Microsoft Agent Framework；MCP 安全；Docker / OpenSandbox。</td><td>分别学习审批、事件、恢复和隔离机制，只选与当关有关的一个。</td></tr><tr><td>A7</td><td>Agent 评测方法与自己的失败记录。</td><td>可复现实验、应用部署与基本演示；FDE专项在F1选修。</td></tr></table>
 <p>DeerFlow 使用 LangGraph / LangChain，可学其机制，无需把依赖一起移入主线。框架源码只沿一条调用链阅读；目标是能替换一层、解释边界，而不是读完整个仓库。</p>
 <p><a href="https://docs.python.org/3/tutorial/">Python 官方教程</a> · <a href="https://fastapi.tiangolo.com/tutorial/">FastAPI Tutorial</a> · <a href="https://huggingface.co/learn/agents-course/en/unit0/introduction">Hugging Face Agents Course</a> · <a href="https://github.com/openai/openai-agents-python">OpenAI Agents SDK 源码</a> · <a href="https://github.com/Tencent/WeKnora">腾讯 WeKnora</a> · <a href="https://github.com/bytedance/deer-flow">字节 DeerFlow</a> · <a href="https://github.com/agentscope-ai/agentscope">AgentScope</a> · <a href="https://github.com/microsoft/agent-framework">Microsoft Agent Framework</a></p>
 </section>
 <section class="page" id="p14"><h2>14 岗位覆盖与模型服务分支</h2><p class="sub">应用工程、FDE、服务平台是相关但不同的岗位目标</p>
-<table><tr><th>方向</th><th>本项目能支撑</th><th>额外门槛 / 分支</th></tr><tr><td>AI 应用 / Agent</td><td>A1-A7：后端、工具、检索、权限、评测与交付。</td><td>编码 / DSA / SQL / 网络；真实 JD 的语言与年资；不能只演示框架。</td></tr><tr><td>FDE</td><td>A7：需求澄清、客户系统集成、演示、验收与交接。</td><td>部分有 new-grad / intern，部分要求多年经验或差旅；英语外向不代替工程能力。</td></tr><tr><td>模型服务平台</td><td>主线仅有调用侧基础，不足以宣称完成平台方向。</td><td>另 100-160h：Linux、并发、排队 / 背压、配额、路由、取消、容量与故障测量。</td></tr><tr><td>推理内核 / 训练 Infra</td><td>不在主线。</td><td>C++ / CUDA、GPU 架构、分布式通信和性能分析等；不要混同于 API 平台。</td></tr></table>
+<table><tr><th>方向</th><th>本项目能支撑</th><th>额外门槛 / 分支</th></tr><tr><td>AI 应用 / Agent</td><td>A1-A7：后端、工具、检索、权限、评测与交付。</td><td>编码 / DSA / SQL / 网络；真实 JD 的语言与年资；不能只演示框架。</td></tr><tr><td>FDE</td><td>F1选修：客户流程、复杂集成、演示、验收与交接。</td><td>不作为核心目标或投Agent实习的前置；按实际兴趣和JD再加。</td></tr><tr><td>模型服务平台</td><td>主线仅有调用侧基础，不足以宣称完成平台方向。</td><td>另 100-160h：Linux、并发、排队 / 背压、配额、路由、取消、容量与故障测量。</td></tr><tr><td>推理内核 / 训练 Infra</td><td>不在主线。</td><td>C++ / CUDA、GPU 架构、分布式通信和性能分析等；不要混同于 API 平台。</td></tr></table>
 <p>服务分支先用 Mock 测 429、超时、有界队列与公平性，再在兼容 Linux / GPU 环境运行 vLLM，测 TTFT、token 间延迟、吞吐、KV / 显存和队列。Mac 不等于 CUDA 环境。现有 ServeLab 若已通过相同验收，引用自己的证据、补缺口即可，不重写第二个网关。</p>
 <p>Web / 全栈若成为主求职方向，A4 / A7 后另留约 80-140h 浏览器、布局、测试与性能专项。不要把这个分支与平台分支同时加入主线。详细官方 JD 与证据限制见 JOB_REQUIREMENTS_AUDIT.md。</p>
 <p><a href="https://docs.vllm.ai/en/latest/usage/metrics/">vLLM 服务指标</a></p>
 </section>
-<section class="page" id="p15"><h2>15 双线时间安排与求职节奏</h2><p class="sub">总预算每周 21 小时起；课程、调试、测试、文档和面试都算在内</p>
-<table><tr><th>时期 / 条件</th><th>MeetLoop</th><th>AgentDesk</th><th>公共基础</th></tr><tr><td>现在至首轮 iOS 面试准备</td><td>13h</td><td>5h</td><td>3h</td></tr><tr><td>M3 过关后的默认安排</td><td>8h</td><td>10h</td><td>3h</td></tr><tr><td>实习 / 考试导致时间减少</td><td>按真实余量保留一个主项</td><td>维持小步或暂停新功能</td><td>保留每周复盘</td></tr></table>
-<p>从 2026 年 11 月到 2027 年 2 月底约 17 周：约 221h 给 MeetLoop、85h 给 AgentDesk、51h 给公共基础。对应目标是 M3 的中低区间和 A1 完成；不是四个月内做完双项目。若起点不足或春节暂停，按关卡顺延。</p>
-<p>两条主线各为 450-650h，合计 900-1300h；每周项目时间 18h，粗算约 50-73 个有效周。按 M3 过关即从 13/5 切到 8/10、完成一项后暂不重分配工时估算，约 52-75 周；再加 10%-20% 中断余量，约 14-21 个日历月。18 个月可争取中档完成，高档或大幅中断会更久。</p>
-<h3>投递不等全部完工</h3>
-<ul><li>2026 年 12 月整理实习复盘与简历，开始关注官方岗位；M2 后可试投并记录面试缺口，M3 作为首轮目标。</li><li>春季 2027 上海优先、4-5 天 / 周、连续至少 3 个月；毕业时间、在读身份和具体到岗日期逐项核对，不因作品完成就默认有资格。</li><li>美国岗位按届别及在读要求提前查看；具体实习或工作资格以学校与雇主确认为准。本次不推断个人资格。</li></ul>
-<p class="box">月度只调整工时与下一关。不要因岗位热词每周更换技术栈；岗位复核在 M3、A5 和正式投递前进行。</p>
+<section class="page" id="p15"><h2>15 核心路线的实习时间安排</h2><p class="sub">从现在累计；每周 21h 并行；不是两个项目分别全职学习</p>
+<table><tr><th>时期</th><th>iOS / RN</th><th>Agent / AI 应用</th><th>公共基础</th></tr><tr><td>首轮 iOS 关卡之前</td><td>13h</td><td>5h</td><td>3h</td></tr><tr><td>M3 通过后默认均衡推进</td><td>9h</td><td>9h</td><td>3h</td></tr></table>
+<table><tr><th>投递检查点</th><th>累计项目工时</th><th>含日历中断的估计</th></tr><tr><td>iOS 实习：M0-M3</td><td>150-220h</td><td>约 3-5 个月</td></tr><tr><td>iOS + RN：M0-M5 必修</td><td>300-420h</td><td>约 7-11 个月</td></tr><tr><td>AI 应用 / 只读 Agent：A0-A4</td><td>205-295h</td><td>约 7-12 个月</td></tr><tr><td>带受控操作 Agent：A0-A5</td><td>260-375h</td><td>约 9-14 个月</td></tr></table>
+<p>估算基于当前基础尚需补独立编码，每阶段含课程、调试、测试与正常返工；日历额外考虑 10%-20% 中断。各档是从现在累计，不能相加。2026-10-29 起步的首轮 iOS 窗口约为 2027 年 1 月底至 3 月；其余按实际小时顺延。</p>
+<p>核心扎实路线：MeetLoop 360-510h，AgentDesk 425-610h；合计 785-1120h。以上述分配且暂不重分配已完成项目工时估算，约 53-76 个有效周，含中断约 14-21 个月。实习投递早于完整深化完成。</p>
+<p class="box">Android / Go、FDE / 模型平台均不阻塞核心投递。可读 JD 是能力样本，不能保证未来 HC；城市、学生身份、毕业窗口与实习时长逐项核对。</p>
 </section>
 <section class="page" id="p16"><h2>16 两个项目之外必须持续训练</h2><p class="sub">公共 3h / 周单独记账；同一知识不在两个项目重复计时</p>
 <table><tr><th>能力</th><th>训练安排</th><th>能证明什么</th></tr><tr><td>编码与数据结构</td><td>每周 90 分钟：数组 / 字符串 / 哈希、栈队列、二分、树与图、堆；再按 JD 补基础 DP。</td><td>能说复杂度、列边界、独立写代码；隔周重做并换条件。</td></tr><tr><td>网络 / OS / SQL</td><td>每周 60 分钟轮换一个主题：HTTP / TLS / DNS、进程线程与并发、事务索引与查询计划。</td><td>能跟踪客户端到数据库的一次请求；用实验解释取消、锁或超时。</td></tr><tr><td>表达与复盘</td><td>每周 30 分钟：3 分钟演示、一次故障讲解或英文方案说明。</td><td>讲清问题、选择、证据与限制；区分自己完成与 AI 辅助。</td></tr></table>
@@ -124,8 +125,20 @@
 <ul><li>第一周 5h：环境 / 基线 1h，Python 练习 1.5h，工单查询 1.5h，断言与独立改题 1h。零基础需要更多时间就继续 A0。</li><li>前四周共约 20h：目标是 A0 过关并开始 A1，只读查询与测试优先；不承诺此时已完成 API、SQL 和 Agent 循环。</li><li>每阶段更新 PROGRESS：复现命令、独立需求变更、失败实验、验证结果、暂未理解之处；AI 可以帮助，关键边界由自己解释和验证。</li></ul>
 <h3>最终应具备的五种能力</h3>
 <p>独立编码一个受限工具；解释模型、工具、状态与业务的边界；定位检索 / 权限 / 恢复故障；用数据比较质量、费用与延迟；把用户需求变成可运行、可验收、可交接的系统。</p>
-<p>当前已准备文档与虚构输入，尚无真实运行结果。未来主线完成可支撑部分应用工程 / FDE 岗位的项目面试，但不是覆盖所有大厂岗位或替代真实团队经历。</p>
+<p>当前已有文档和虚构输入，尚无真实运行结果。核心完成可支撑部分AI应用 / Agent实习的项目面试；FDE需加F1，平台需加P1。作品不替代基础面试、资格或团队经历。</p>
 <p class="box">SDK / 模型阶段开始时复核官方版本与接口。2026-10-29 核对的 OpenAI 公告将旧 Evals 平台与 Agent Builder 标为退役路径；本计划将评测数据、runner 和断言保存在自己的仓库，不绑定这些旧平台。</p>
 <p><a href="https://developers.openai.com/api/docs/deprecations">OpenAI API 弃用公告</a></p>
+</section>
+<section class="page" id="p18"><h2>18 实习目标：国内八家公司</h2><p class="sub">2026-10-29样本；岗位类型建议不等于未来保证有空缺</p>
+<table><tr><th>公司</th><th>优先关注</th><th>实际核验与限制</th></tr><tr><td>腾讯</td><td>iOS / 移动跨端；AI应用</td><td>本部上海具体JD未核实；TME有移动实习索引，深圳/北京/广州，不能代表本部上海。</td></tr><tr><td>阿里</td><td>客户端 / 跨端；AI应用研发</td><td>日常实习入口可确认；具体目标JD待复核；查到的Agent算法岗要求训练/RL，不是本主线。</td></tr><tr><td>百度</td><td>iOS；匹配语言栈的AI后端</td><td>北京移动JD正文可读；上海模型平台属附加；AI开放平台另要求Java/Spring。</td></tr><tr><td>字节</td><td>iOS / 客户端；Agent应用后端</td><td>有官方实习标题，国内详情城市/届别/时长未核实；此处仅列可选方向。</td></tr><tr><td>小红书</td><td>iOS / 社区客户端</td><td>上海/北京18417官方索引：27年及后毕业，4-5天/周，至少4个月。</td></tr><tr><td>B站</td><td>iOS / 移动客户端</td><td>有客户端线索，官方正文和开放状态未核实；不可把偏Android线索当RN岗位。</td></tr><tr><td>携程</td><td>iOS / 移动跨端；AI应用</td><td>官方入口可达，当前具体技术实习未核实；历史RN技术不证明当前有岗。</td></tr><tr><td>美团</td><td>移动端 / 点评；AI应用研发</td><td>Agent评测索引在北京且偏评测；上海历史前端岗已不可投，开发岗需复核。</td></tr></table>
+<p>上海优先、4-5天/周、原先约3个月：首先核对时长与在读身份；小红书的4个月要求是实际差距。实习项目与正式校招不能混用；Agent应用、算法研究和人工评测要按职责区分。</p>
+<p class="box">完整JD链接、证据级别和筛选关键词：仓库 docs/INTERNSHIP_TARGETS.md。当前正文 / 索引仅作准备证据，正式投递前重新核对。</p>
+<p><a href="https://join.qq.com/">腾讯本部实习入口</a> · <a href="https://campus-talent.alibaba.com/">阿里校园 / 日常实习</a> · <a href="https://talent.baidu.com/jobs/detail/INTERN/d4993c3c-f5a4-4a06-92d0-766f53fb832b">百度移动实习J104728</a> · <a href="https://jobs.bytedance.com/campus/">字节校园入口</a> · <a href="https://job.xiaohongshu.com/campus/position/18417">小红书18417</a> · <a href="https://jobs.bilibili.com/">B站招聘入口</a> · <a href="https://careers.ctrip.com/">携程招聘入口</a> · <a href="https://zhaopin.meituan.com/web/campus">美团校园入口</a></p>
+</section>
+<section class="page" id="p19"><h2>19 实习目标：美国移动与 AI 应用</h2><p class="sub">多数样本是2027暑期；不代表2028岗位已开放</p>
+<table><tr><th>公司 / 类型</th><th>项目对应</th><th>资格和证据边界</th></tr><tr><td>Apple / 硕士软件实习</td><td>MeetLoop原生iOS</td><td>官方索引，MS在读；人才池，不是确定团队空缺。</td></tr><tr><td>Circleback / SWE Intern</td><td>RN、React、API到UI</td><td>SF现场，2027暑期；官方索引；RN藏在职责里。</td></tr><tr><td>Amazon / SDE Intern USA</td><td>两个项目+通用CS</td><td>官方正文；12周，2027.10-2029.09毕业且结束后返校；不保证移动分组。</td></tr><tr><td>Sierra / Agent Intern</td><td>AgentDesk应用工程</td><td>SF/NY，官方索引；2027.12-2028.06毕业，相关本科/MS在读。</td></tr><tr><td>Netic / Agent Platform Intern</td><td>harness / sandbox / eval / 恢复</td><td>SF，官方索引，12周；这里主要是Agent运行工程，不是GPU平台。</td></tr><tr><td>HP IQ / SWE Intern</td><td>Agent工具、评估、研发效能</td><td>SF，官方正文，明确不要求深ML；2027暑期。</td></tr><tr><td>TikTok / Mobile或AI后端</td><td>移动工程或Agent应用</td><td>San Jose，官方正文，2027暑期12周；作为可选项。</td></tr></table>
+<p>若2027秋才赴美，按实际入学与毕业时间准备之后的实习窗口；工作授权、返校和雇主政策逐项核对。未注明sponsorship不能理解为承诺。FDE仅留附加观察，不扩大核心计划。</p>
+<p class="box">移动简历突出iOS实习+MeetLoop；AI应用简历突出AgentDesk的工具、状态、权限与评测。两个项目均需自己能改、能讲、能排错，不能仅展示生成代码。</p>
+<p><a href="https://jobs.apple.com/en-us/details/200664320-3810/software-engineering-masters-internships?team=STDNT">Apple硕士实习人才池</a> · <a href="https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f">Circleback RN相关实习</a> · <a href="https://www.amazon.jobs/en/jobs/10552937/software-development-engineer-intern-summer-2027-usa">Amazon USA SDE实习</a> · <a href="https://jobs.ashbyhq.com/sierra/34b31b67-268c-4270-b48f-72e59064c96e">Sierra Agent实习</a> · <a href="https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7/?embed=true">Netic Agent工程实习</a> · <a href="https://job-boards.greenhouse.io/hpiq/jobs/6114890004">HP IQ AI应用实习</a></p>
 </section>
 </main></html>

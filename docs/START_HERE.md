@@ -1,6 +1,6 @@
 # AgentDesk 从这里开始
 
-当前主计划：v2.0（2026-10-29）。只按 [当前主计划](plans/plan.md) 的A0-A7推进。先做Python、只读数据与确定性流程，达到A1关卡后才进入模型循环；没有“第5周必须上模型”的要求。
+当前主计划：v2.1（2026-10-29）。只按 [当前主计划](plans/plan.md) 的A0-A7推进。先做Python、只读数据与确定性流程，达到A1关卡后才进入模型循环；没有“第5周必须上模型”的要求。
 
 ## 第一次约2小时
 
@@ -33,3 +33,5 @@ A0+A1共60-85h；按5h/周约12-17周。若已有Python/SQL能力，可独立通
 - [ ] 第一阶段不需要GPU、付费API、Docker集群或多Agent框架。
 
 真实模型接入在A2；代码执行在A6的隔离验收之后。每个阶段具体材料扩充见 [准备审核](PREPARATION_AUDIT.md)。资料：[Python教程](https://docs.python.org/3/tutorial/) · [pytest](https://docs.pytest.org/en/stable/getting-started.html) · [进度账本](PROGRESS.md)
+
+主次确认：iOS/RN与Agent/AI应用是核心；Android/Go/FDE/平台为附加。最新累计估时见[实习时间](面试准备与时间评估.md)。

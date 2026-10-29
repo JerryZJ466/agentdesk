@@ -8,18 +8,20 @@
 
 ## 只从这份计划开始
 
-- **[当前主计划 v2.0](docs/plans/plan.md)**：阶段顺序、工时、开发任务、验收及学到什么。
+- **[当前主计划 v2.1](docs/plans/plan.md)**：阶段顺序、工时、开发任务、验收及学到什么。
 - [今天和前四周](docs/START_HERE.md)：第一项任务，无需先读完全部资料。
 - [进度账本](docs/PROGRESS.md)：各关卡当前均待开始，用代码和验证证据更新。
 - [岗位能力审核](docs/JOB_REQUIREMENTS_AUDIT.md)：官方样本、缺口与角色边界。
 - [准备工作审核](docs/PREPARATION_AUDIT.md) · [时间与面试评估](docs/面试准备与时间评估.md) · [公共基础](docs/COMMON_FOUNDATIONS.md)
-- [本机HTML版](docs/plans/plan.html) · [当前PDF快照](docs/plans/AgentDesk_开发与学习主计划_v2.0_2026-10-29.pdf)
+- [本机HTML版](docs/plans/plan.html) · [当前PDF快照](docs/plans/AgentDesk_开发与学习主计划_v2.1_2026-10-29.pdf)
 
-主目标是AI应用/Agent工程，FDE增加需求和交付训练；模型服务平台另有分支。先确定性流程和教学循环，再一种主SDK，不局限于LangChain，也不堆框架。
+主目标是AI应用/Agent工程；FDE专项和模型服务平台均为选修。先确定性流程和教学循环，再一种主SDK，不局限于LangChain，也不堆框架。
+
+- [实习目标：国内八家与美国岗位](docs/INTERNSHIP_TARGETS.md)
 
 ## 时间与优先级
 
-首轮iOS实习准备默认每周MeetLoop 13h、AgentDesk 5h、公共基础3h；M3过关后默认8h/10h/3h。主线各450-650h，以实际关卡推进；两条并行含中断余量约14-21个月，不能把18个月当录用承诺。选修分支另计。
+首轮iOS准备每周13h MeetLoop、5h AgentDesk、3h公共基础；M3过关后9h/9h/3h。iOS投递检查约3-5个月，iOS+RN约7-11个月，AI应用/只读Agent约7-12个月，受控操作Agent约9-14个月。均从现在累计、按独立验收判断。Android/Go/FDE/平台不阻塞核心投递。
 
 ## 独立迭代
 
@@ -34,3 +36,5 @@
 - [虚构数据说明](fixtures/准备材料说明.html)
 - [开源阅读地图](docs/开源阅读地图.html)
 - [旧v1.0 PDF（历史）](docs/plans/AgentDesk_Agent工程学习执行计划_v1.0_2026-10-28.pdf)
+
+- [上一版主计划（历史）](docs/plans/AgentDesk_开发与学习主计划_v2.0_2026-10-29.pdf)
