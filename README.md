@@ -9,7 +9,9 @@
 ## 只从这份计划开始
 
 - **[当前主计划 v2.1](docs/plans/plan.md)**：阶段顺序、工时、开发任务、验收及学到什么。
-- [今天和前四周](docs/START_HERE.md)：第一项任务，无需先读完全部资料。
+- **[每天3小时：前28天任务清单](docs/DAILY_28D.md)**：Windows起步，课程链接、每日练习、验收与Mac到货分支。
+- [每日清单本机阅读](docs/DAILY_28D.html) · [每日清单PDF](docs/daily/学习执行清单_每天3小时_前28天_2026-10-29.pdf)
+- [项目起步说明](docs/START_HERE.md)：实际学习状态和过关要求。
 - [进度账本](docs/PROGRESS.md)：各关卡当前均待开始，用代码和验证证据更新。
 - [岗位能力审核](docs/JOB_REQUIREMENTS_AUDIT.md)：官方样本、缺口与角色边界。
 - [准备工作审核](docs/PREPARATION_AUDIT.md) · [时间与面试评估](docs/面试准备与时间评估.md) · [公共基础](docs/COMMON_FOUNDATIONS.md)
